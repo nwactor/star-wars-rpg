@@ -5,36 +5,56 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<h1>Star Wars RPG!</h1>
-	
-	<section>
-		<div class="character-panel"></div>
-		<div class="character-panel"></div>
-		<div class="character-panel"></div>
-		<div class="character-panel"></div>
+	<header>
+		<h1>Star Wars RPG!</h1>
+	</header>
+
+	<section class="clearfix">
+		<div id="fighter-1" class="character-panel float-left">
+			<h3>Luke Skywalker</h3>
+			<img class="character-img" src="./assets/images/luke.jpg">
+			<h3 id="health-1"></h3>
+		</div>
+		<div id="fighter-2" class="character-panel float-left">
+			<h3>Anakin Skywalker</h3>
+			<img class="character-img" src="./assets/images/anakin.png">
+			<h3 id="health-2"></h3>
+		</div>
+		<div id="fighter-3" class="character-panel float-left">
+			<h3>Mace Windu</h3>
+			<img class="character-img" src="./assets/images/mace.jpg">
+			<h3 id="health-3"></h3>
+		</div>
+		<div id="fighter-4" class="character-panel float-left">
+			<h3>Darth Maul</h3>
+			<img class="character-img" src="./assets/images/maul.jpg">
+			<h3 id="health-4"></h3>
+		</div>
 	</section>
 	
-	<section>
+	<section class="float-left" style="margin-right: 100px;">
 		<h2>Your Character</h2>
-		<div>
+		<div class="character-slot">
 			
 		</div>
 	</section>
 	
-	<section>
+	<section class="clearfix">
 		<h2>Enemies Available to Attack</h2>
-		<div>
+		<div class="character-slot">
 			
 		</div>
 	</section>
 
-	<section>
+	<section class="clearfix">
 		<h2>Fight Section</h2>
 		<button>Attack</button>
 		<h2>Defender</h2>
+		<div class="character-slot"></div>
 	</section>
 
 	<script src="assets/javascript/game.js"></script>
