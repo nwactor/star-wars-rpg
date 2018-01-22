@@ -54,8 +54,15 @@ h3 {
 	height: 256px;
 }
 
+#battle-message {
+	visibility: hidden;
+	color: black;
+	font-size: 14px;
+	margin-left: 400px;
+}
+
 .mode-2 {
-	visibility: collapse; 
+	display: none; 
 }
 
 .clearfix::after {
