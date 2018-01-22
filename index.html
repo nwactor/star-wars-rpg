@@ -13,7 +13,8 @@
 		<h1>Star Wars RPG!</h1>
 	</header>
 
-	<section class="clearfix">
+	<section class="clearfix mode-1">
+		<h2>Choose Your Fighter</h2>
 		<div id="fighter-1" class="character-panel float-left">
 			<h3>Luke Skywalker</h3>
 			<img class="character-img" src="./assets/images/luke.jpg">
@@ -22,39 +23,39 @@
 		<div id="fighter-2" class="character-panel float-left">
 			<h3>Anakin Skywalker</h3>
 			<img class="character-img" src="./assets/images/anakin.png">
-			<h3 id="health-2"></h3>
+			<h3 id="health-2">0</h3>
 		</div>
 		<div id="fighter-3" class="character-panel float-left">
 			<h3>Mace Windu</h3>
 			<img class="character-img" src="./assets/images/mace.jpg">
-			<h3 id="health-3"></h3>
+			<h3 id="health-3">0</h3>
 		</div>
 		<div id="fighter-4" class="character-panel float-left">
 			<h3>Darth Maul</h3>
 			<img class="character-img" src="./assets/images/maul.jpg">
-			<h3 id="health-4"></h3>
+			<h3 id="health-4">0</h3>
 		</div>
 	</section>
 	
-	<section class="float-left" style="margin-right: 100px;">
+	<section class="float-left mode-2" style="margin-right: 100px;">
 		<h2>Your Character</h2>
-		<div class="character-slot">
+		<div id="player-slot" class="character-slot">
 			
 		</div>
 	</section>
 	
-	<section class="clearfix">
+	<section class="clearfix mode-2">
 		<h2>Enemies Available to Attack</h2>
-		<div class="character-slot">
+		<div id="enemy-slots" class="character-slot">
 			
 		</div>
 	</section>
 
-	<section class="clearfix">
-		<h2>Fight Section</h2>
-		<button>Attack</button>
+	<section class="clearfix mode-2" style="color: red">
+		<h2>Fight Section - Select Enemy to Duel</h2>
+		<button id="attack-button">Attack</button>
 		<h2>Defender</h2>
-		<div class="character-slot"></div>
+		<div id="defender-slot" class="character-slot"></div>
 	</section>
 
 	<script src="assets/javascript/game.js"></script>
