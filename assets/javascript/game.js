@@ -130,9 +130,29 @@ function showGameOver() {
 	$('#battle-message').append("<br>" +
 		defender.panel.children('.name').text() + 
 		" defeated you. Game over.");
+	showResetButton();
 }
 
 //Show win message
 function showWin() {
 	$('#battle-message').append("<br>You won!!!!");
+	showResetButton();
+	// showFinalBoss();
 }
+
+function showResetButton() {
+	$('#reset-button').css('visibility', 'visible');
+}
+
+$('#reset-button').on('click', function() {
+	location.reload();
+});
+
+// function showFinalBoss() {
+// 	var warning = $('<span>');
+// 	warning.text('<br>But wait. A new challenger appears!');
+// 	warning.css('color', 'red');
+// 	warning.css('font-size', '20px');
+// 	$('#battle-message').append(warning);
+// 	showFinalBoss();
+// }

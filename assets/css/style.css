@@ -61,6 +61,11 @@ h3 {
 	margin-left: 400px;
 }
 
+#reset-button {
+	visibility: hidden;
+	margin-left: 400px;
+}
+
 .mode-2 {
 	display: none; 
 }
