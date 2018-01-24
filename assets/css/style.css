@@ -61,9 +61,10 @@ h3 {
 	margin-left: 400px;
 }
 
-#reset-button {
+#reset-button, #boss-button {
 	visibility: hidden;
 	margin-left: 400px;
+	margin-top: 20px;
 }
 
 .mode-2 {
