@@ -8,10 +8,10 @@ function character(hp, basePower, counterPower, panel) {
 
 var roster = [];
 
-roster.push(new character(300, 5, 15, $('#fighter-1'))); //Luke
-roster.push(new character(150, 3, 20, $('#fighter-2'))); //Anakin
-roster.push(new character(150, 3, 20, $('#fighter-3'))); //Mace Windu
-roster.push(new character(200, 3, 15, $('#fighter-4'))); //Darth Maul
+roster.push(new character(111, 11, 9, $('#fighter-1'))); //Luke
+roster.push(new character(92, 20, 8, $('#fighter-2'))); //Anakin
+roster.push(new character(100, 15, 11, $('#fighter-3'))); //Mace Windu
+roster.push(new character(125, 10, 6, $('#fighter-4'))); //Darth Maul
 
 var playerCharacter;
 var defender;
@@ -200,7 +200,7 @@ function bossAppears() {
 	bossPanel.append(bossHP);
 	
 	//add the boss to the roster
-	roster.push(new character(500, 10, 30, bossPanel));
+	roster.push(new character(200, 20, 20, bossPanel));
 	defender = roster[roster.length - 1];
 	
 	//start the fight against the boss
