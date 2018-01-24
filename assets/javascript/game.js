@@ -1,6 +1,7 @@
-function character(hp, attackPower, counterPower, panel) {
+function character(hp, basePower, counterPower, panel) {
 	this.hp = hp;
-	this.attackPower = attackPower;
+	this.basePower = basePower;
+	this.attackPower = basePower;
 	this.counterPower = counterPower;
 	this.panel = panel;
 }
@@ -100,10 +101,12 @@ function fight() {
 	playerCharacter.hp -= defender.counterPower;
 	if(playerCharacter.hp < 0) { playerCharacter.hp = 0; }
 
+	//update UI
 	updateHealth();	
-	playerCharacter.attackPower *= 2;
-
 	getBattleMessage();
+
+	//increase player's power
+	playerCharacter.attackPower += playerCharacter.basePower;
 
 	//check for someone being defeated
 	if(playerCharacter.hp === 0) {
@@ -132,7 +135,7 @@ function defeatEnemy(enemy) {
 function getBattleMessage() {
 	$('#battle-message').html("You attacked " + 
 		defender.panel.children('.name').text() + "for " + 
-		(playerCharacter.attackPower / 2) + " damage.<br>" + 
+		(playerCharacter.attackPower) + " damage.<br>" + 
 		defender.panel.children('.name').text() +
 		" attacked you for " + defender.counterPower + " damage.");
 }
